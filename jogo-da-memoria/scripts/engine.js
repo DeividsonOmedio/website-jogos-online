@@ -37,8 +37,6 @@ function handleClick() {
   if (openCards.length == 2) {
     setTimeout(checkMatch, 500);
   }
-
-  console.log(openCards);
 }
 
 function checkMatch() {

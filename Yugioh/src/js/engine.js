@@ -163,8 +163,6 @@ async function drawCards(cardNumbers, fieldSide) {
     for(let i = 0; i < cardNumbers; i++) {
         const randomIdCard = await getRandomCardId()
         const cardImage = await createCardImage(randomIdCard, fieldSide)
-
-        // console.log(fieldSide);
         document.getElementById(fieldSide).appendChild(cardImage)
     }
 }

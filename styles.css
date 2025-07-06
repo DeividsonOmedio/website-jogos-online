@@ -43,7 +43,7 @@ header .logo, header .sair {
     font-size: 2em;
     width: 100%;
   }
-  header .sair {
+  header .contato {
     scale: .5;
     margin-right: -40px;
   }
