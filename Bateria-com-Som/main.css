@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css?family=Handlee|Pacifico);
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+header .logo, header .sair {
+	color: #f0f0f0;
+	text-decoration: none;
+	font-weight: bold;
+	z-index: 100;
+	margin-bottom: 15px;
+}
+  
+  header .logo:hover, header .sair:hover {
+	filter: brightness(1.2);
+	transition: filter 0.3s ease;
+  }
+  
+  .header {
+	position: relative;
+	top: 10px;
+	left: 20px;
+	right: 20px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 2em;
+}
+
+  header .sair {
+	scale: .5;
+	margin-right: 15px;
+  }
+
+.main-wrapper {
+	width: 100%;
+	text-align: center;
+    align-content: center;
+    height: 100%;
+	padding-top: 10px;
+}
+.main-title {
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	font-size: 3.2em;
+	color: #46080b;
+	text-shadow: 1px 1px 1px #5a0b0d;
+}
+.drum-kit-wrapper {
+	position: relative;
+	width: 600px;
+	margin: auto auto ;
+}
+.drum-kit {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	z-index: 0;
+	filter: hue-rotate(0deg);
+	transition: filter 500ms linear;
+}
+.crash-cymbal {
+	position: absolute;
+	top: 114px;
+    left: 80px;
+	z-index: 1;
+    transform: rotate(-7.2deg) scale(1.5);
+    transition: all ease-in-out .042s;
+}
+.hihat-top-cymbal {
+	position: absolute;
+    top: 166px;
+    right: 71px;
+    transform: scale(1.35);
+    z-index: 1;
+    transition: all ease-in-out .042s;
+}
+.chimbal-cymbal{
+	position: absolute;
+    top: 206px;
+    right: 76px;
+    z-index: 1;
+	transform: scale(1.35);
+}
+.key {
+	display: inline-block;
+	transition: all ease-in-out .042s;
+	position: absolute;
+	background: #eaeaea;
+    font-size: 1.5em;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    border-radius: 4px;
+    border: 3px solid #aaa;
+    color: #444;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.65);
+    z-index: 2;
+}
+.key.kick {
+	top: 355px;
+    right: 250px;
+}
+.key.kick2 {
+    top: 355px;
+    right: 308px;
+}
+.key.snare {
+	right: 145px;
+    top: 280px;
+}
+.key.tom-high {
+	right: 227px;
+    top: 240px;
+}
+.key.tom-mid {
+	left: 222px;
+    top: 220px;
+}
+.key.tom-low {
+	top: 320px;
+    left: 133px;
+}
+.key.crash {
+	top: 80px;
+    left: 75px;
+}
+.key.ride {
+	left: 165px;
+    top: 87px;
+}
+.key.hihat-open {
+	right: 165px;
+    top: 144px;
+}
+.key.hihat-close {
+	right: 60px;
+    top: 150px;
+}
+
+ul{
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	
+}
+li{
+	width: 60px;
+	list-style: none;
+	background-color: rgba(0, 0, 139, 0.418);	
+	margin-right: 2%;
+	padding-left: 1%;
+	font-family: cursive;
+	z-index: 10;
+
+}
+li:hover{
+	filter: brightness(3);
+	cursor: progress;
+}
+#cortinas{
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+}
+#cortina1{
+	position: relative;
+	width: 50%;
+	left: 0;
+	transition: left 5s;
+	cursor: pointer;
+}
+#cortina2{
+	position: relative;
+	width: 50%;
+	right: 0;
+	transition: right 5s;
+	cursor: pointer;
+}
+#corDaBateria li{
+	width: 120px;
+	text-align: center;
+	margin-right: auto;
+	z-index: 10;
+	
+}
+#fun{
+	object-fit: cover;
+	width: 100%;
+	height: 0;
+}
+#fumaca{
+	width: 100%;
+	height: 10%;
+	position: fixed;
+	bottom: 0;
+	opacity: .2;
+	transition: height 6s;
+	padding-top: 0;
+	object-fit: cover;
+	
+}
+#jogar-fumaça{
+	position: fixed;
+	right: 0;
+	width: 70px;
+}
