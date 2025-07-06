@@ -11,10 +11,12 @@
     <title>E-JOGOS - Contato</title>
 </head>
 <body>
-    <header>
-        <h1>Contate-nos</h1>
+    <header class="header">
+        <a class="logo" href="../">E-JOGOS</a>
+        <a class="sair" href="../">Voltar</a>
     </header>
     <main class="container">
+        <h1>Contate-nos</h1>
         <form action="https://formspree.io/f/xpznaben" method="post">
             <div class="input-container">
                 <input class="input" type="text" name="Nome" placeholder="Nome">
@@ -25,7 +27,7 @@
                 <small class="error-message" id="email-error"></small>
             </div>
             <div class="input-container">
-                 <textarea name="Assunto" id="" placeholder="Assunto (Opcional)"></textarea>
+                    <textarea name="Assunto" id="" placeholder="Assunto (Opcional)"></textarea>
                 <small class="error-message" id="subject-error"></small>
             </div>
             <label class="checkbox-label">
@@ -35,7 +37,7 @@
             <div class="Loader">
                 <button type="submit" class="button">Enviar</button>
             </div>
-          </form>
+        </form>
     </main>
 </body>
 <div class="container-spinner">
