@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slid.css">
+    <link href="styles/animationButton.css" rel="stylesheet">
+    <script src="scripts/index.js" defer></script>
+    <title>E-JOGOS - Contato</title>
+</head>
+<body>
+    <header>
+        <h1>Contate-nos</h1>
+    </header>
+    <main class="container">
+        <form action="https://formspree.io/f/xpznaben" method="post">
+            <div class="input-container">
+                <input class="input" type="text" name="Nome" placeholder="Nome">
+                <small class="error-message" id="name-error"></small>
+            </div>
+            <div class="input-container">
+                <input class="input" type="email" name="Email" placeholder="Email">
+                <small class="error-message" id="email-error"></small>
+            </div>
+            <div class="input-container">
+                 <textarea name="Assunto" id="" placeholder="Assunto (Opcional)"></textarea>
+                <small class="error-message" id="subject-error"></small>
+            </div>
+            <label class="checkbox-label">
+                <input id="checkbox" type="checkbox" name="Aceita receber emails"> Aceito receber emails
+            </label>
+            <small class="error-message" id="checkbox-error"></small>
+            <div class="Loader">
+                <button type="submit" class="button">Enviar</button>
+            </div>
+          </form>
+    </main>
+</body>
+<div class="container-spinner">
+    <img src="/contato/images/loading_spinner.gif" alt="spinner" class="spinner">
+</div>
+<div id="success-modal" class="modal-overlay">
+    <div class="modal-content">
+        <h2>Mensagem Enviada!</h2>
+        <p>Obrigado por entrar em contato. Responderemos em breve.</p>
+        <p>Enquanto isso, sinta-se à vontade para explorar nossos jogos!</p>
+        <p>Se você tiver alguma dúvida, entre em contato conosco novamente.</p>
+        <p>Estamos aqui para ajudar!</p>
+        <p>Obrigado por escolher E-JOGOS!</p>
+        <p>Volte sempre!</p>
+        <a href="../">
+            <button id="close-modal-btn" class="button">Ok</button>
+        </a>
+    </div>
+</div>
+</html>
